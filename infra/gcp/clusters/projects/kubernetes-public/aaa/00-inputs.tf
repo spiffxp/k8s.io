@@ -9,9 +9,14 @@ This file defines:
 terraform {
   required_version = ">= 0.12.8"
 
+  /*
   backend "gcs" {
     bucket = "k8s-infra-clusters-terraform"
     prefix = "kubernetes-public/aaa" // $project_name/$cluster_name
+  }
+  */
+  backend "local" {
+    path = "./default.tfstate"
   }
 
   required_providers {

@@ -141,8 +141,6 @@ done
 # community-owned equivalents to gs://kubernetes-release-{dev,pull}
 RELEASE_BUCKETS=(
   "gs://k8s-release-dev"
-  "gs://k8s-release-dev-asia"
-  "gs://k8s-release-dev-eu"
   "gs://k8s-release-pull"
 )
 PROW_BUILD_SVCACCT=$(svc_acct_email "k8s-infra-prow-build" "prow-build")
